@@ -1,0 +1,90 @@
+:root {
+  font-size: 10px;
+  line-height: 24px;
+  user-select: none;
+  /* font-size: 0.5952380952vw;
+    line-height: 1.4285714286vw; */
+  --primary-color: #233860;
+  --secondary-color: #355492;
+  --background-color: #192741;
+  --text-color: #5374b1;
+  --white: #fff;
+}
+@font-face {
+  font-family: panton700;
+  src: url(../fonts/Panton-Bold.ttf);
+}
+@font-face {
+  font-family: panton800;
+  src: url(../fonts/Panton-ExtraBold.ttf);
+}
+@font-face {
+  font-family: panton500;
+  src: url(../fonts/Panton-SemiBold.ttf);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: panton700;
+  background: var(--background-color);
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  font: inherit;
+}
+
+a,
+button {
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+}
