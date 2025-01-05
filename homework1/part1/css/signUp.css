@@ -81,9 +81,6 @@ body {
   padding-left: 0.5rem;
   margin-top: 3rem;
 }
-.sign-up-submit {
-  width: 15rem;
-}
 
 .error {
   font-size: 1.2rem;
@@ -122,4 +119,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 2.5rem;
+}
+.bottom-btns .btn-blue-border {
+  width: 15rem;
 }
