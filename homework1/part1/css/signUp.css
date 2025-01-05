@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+}
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  width: 50%;
+  position: relative;
+  padding: 10rem 6rem 6rem 6rem;
+  border-radius: 4rem;
+  border: 0.2rem solid #aca5ff;
+}
+.sign-up-container::before {
+  content: "Create your account here";
+  font-size: 3rem;
+  font-family: panton800;
+  color: #aca5ff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  background: var(--secondary-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom: 0.2rem solid #aca5ff;
+}
+.sign-up-inputs {
+  border-radius: 10rem;
+  height: 4rem;
+  width: 100%;
+  padding: 0 0 0 1.5rem;
+  border: 0.2rem solid #263f70;
+  background: #263f70;
+  font-size: 1.8rem;
+  font-family: panton700;
+  color: #c6c6c6;
+}
+.sign-up-inputs:hover {
+  border: 0.2rem solid #41547b;
+}
+.sign-up-inputs:focus {
+  box-shadow: -0.2rem 0.2rem 0.5rem #000, inset -0.1rem 0.1rem 0.2rem #fff;
+  border-color: transparent;
+}
+.sign-up-inputs::placeholder {
+  font-size: 1.8rem;
+}
+.input-password-container {
+  position: relative;
+}
+.password-visibility {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 2rem;
+  top: 1rem;
+  cursor: pointer;
+}
+#passwordVisible {
+  display: none;
+}
+.password-visibility path {
+  fill: rgb(140, 149, 255);
+}
+.hints {
+  align-self: start;
+  font-size: 2rem;
+  color: #d1d1d1;
+  font-family: panton800;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  margin-top: 3rem;
+}
+.sign-up-submit {
+  width: 15rem;
+}
+
+.error {
+  font-size: 1.2rem;
+  font-family: panton500;
+  align-self: start;
+  color: red;
+  padding-left: 0.5rem;
+  display: none;
+}
+.error-input {
+  border-color: red;
+}
+.error-input:hover {
+  background: #123375;
+  border-color: red;
+}
+.error-input:focus {
+  border-color: red;
+  background: #263f70;
+  box-shadow: none;
+}
+.valid-format {
+  border-color: rgb(0, 231, 0);
+}
+.valid-format:hover {
+  background: #123375;
+  border-color: rgb(0, 231, 0);
+}
+.valid-format:focus {
+  border-color: rgb(0, 231, 0);
+  background: #263f70;
+  box-shadow: none;
+}
+.bottom-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}

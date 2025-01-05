@@ -1,0 +1,131 @@
+nav {
+  position: fixed;
+  left: 0;
+  top: 9rem;
+  bottom: 0;
+  width: 24rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: last baseline;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--background-color);
+  border-right: 0.2rem solid var(--primary-color);
+  padding: 2rem;
+}
+.app-ad-container {
+  width: 100%;
+  /* background: radial-gradient(
+    53.51% 92.42% at 50% 7.58%,
+    #06e306 0%,
+    #008f20 100%
+  ); */
+  background: radial-gradient(
+    53.51% 92.42% at 50% 7.58%,
+    #ffffff 0%,
+    #a98fc7 100%
+  );
+  height: 6rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.app-ad-container img {
+  height: 140%;
+  position: absolute;
+  left: -14%;
+  top: -15%;
+  mix-blend-mode: color-burn;
+}
+.app-ad-container button {
+  font-size: 1.5rem;
+  font-family: panton700;
+  color: var(--white);
+  line-height: 2rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, blue, rgba(255, 0, 0, 0.21));
+  mix-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1rem;
+}
+.app-ad-container button:hover {
+  background: rgb(79, 20, 227);
+}
+.topics-container {
+  line-height: normal;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #d1d1d1;
+}
+.topic-list {
+  width: 100%;
+  background: rgb(38, 50, 137);
+  display: flex;
+  align-items: center;
+  border-radius: 10rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.topic-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(16, 26, 99);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic-icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.topic-icon svg path {
+  fill: rgb(167, 155, 202);
+}
+.topic-name {
+  font-family: panton800;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.topic-list:hover {
+  background: rgb(79, 92, 193);
+}
+.topic-list:hover .topic-name {
+  color: #fff;
+}
+.topic-list:hover path {
+  fill: #fff;
+}
+.copyright {
+  margin-top: auto;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+.copyright span {
+  color: #7b9fe2;
+  line-height: 2.4rem;
+  font-size: 1.3rem;
+}
+

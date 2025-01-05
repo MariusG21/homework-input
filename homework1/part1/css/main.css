@@ -1,0 +1,238 @@
+main {
+  border: 0.2rem solid #3c17b7;
+  background: #263f70;
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-top: 6rem;
+  width: 60%;
+  position: relative;
+  min-width: 30rem;
+  height: fit-content;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: start;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  background: #3c17b7;
+}
+main::before {
+  content: "Survey of the Day";
+  height: 4rem;
+  position: absolute;
+  background: #3c17b7;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: panton800;
+  color: transparent;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+/* @media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+} */
+.survey-questions {
+  font-family: panton800;
+  font-size: 2rem;
+  color: var(--white);
+  pointer-events: none;
+}
+#fav-song {
+  width: 100%;
+  background: transparent;
+  border: 0.2rem solid #4d2bbd;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-family: panton700;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: #f0f0f0;
+}
+#fav-song::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.3rem;
+}
+#fav-song:hover {
+  border: 0.2rem solid #9778ff;
+}
+#fav-song:focus {
+  border: 0.2rem solid #825cfe;
+  background: #17336a;
+}
+.checkbox-labels,
+.radio-labels,
+.select-labels {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: panton700;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.checkbox-labels:hover,
+.radio-labels:hover {
+  color: #86a3d7;
+}
+.radio-labels :last-child {
+  transform: translateY(0.2rem);
+}
+.hidden-checkbox {
+  display: none;
+}
+.custom-checkbox {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: #b2b2b2;
+  border-radius: 0.2rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+  border: 0.1rem solid;
+}
+.custom-checkbox svg {
+  position: absolute;
+  right: -0.4rem;
+  top: -0.4rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  opacity: 0;
+}
+.custom-checkbox svg path {
+  fill: #09ff00;
+}
+.hidden-checkbox:checked ~ * {
+  color: #dadada;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(47, 30, 108);
+}
+.hidden-checkbox:checked ~ .custom-checkbox {
+  background: #895bff;
+}
+.hidden-checkbox:checked ~ .custom-checkbox svg {
+  opacity: 1;
+}
+.custom-radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #b2b2b2;
+  border-radius: 50%;
+  border: 0.2rem solid;
+  position: relative;
+}
+
+.hidden-checkbox:checked ~ .custom-radio {
+  background: radial-gradient(#09ff00, #895bff 60%);
+}
+
+.select-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+#genre {
+  width: 12rem;
+  padding-left: 0.5rem;
+  height: 3rem;
+  border: 0.2rem solid #4d2bbd;
+  background: #19356f;
+  border-radius: 1rem;
+  outline: none;
+  font-family: panton800;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  appearance: none;
+}
+#genre:hover {
+  border-color: #9778ff;
+}
+#genre:focus {
+  border-color: #825cfe;
+  color: #86a3d7;
+}
+#thoughts {
+  outline: none;
+  font-family: panton500;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  border: 0.2rem solid #4d2bbd;
+  background: radial-gradient(53.51% 92.42% at 50% 7.58%, #3b5b9c, #1a305c);
+  resize: none;
+  scrollbar-width: none;
+}
+#thoughts::-webkit-scrollbar {
+  display: none;
+}
+#thoughts::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: panton500;
+}
+#thoughts:hover {
+  border-color: #9778ff;
+}
+#thoughts:focus {
+  border-color: #825cfe;
+  background: #17336a;
+  color: #fff;
+}
+#send-survey-border {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  margin-top: 2rem;
+  width: 20%;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #2351ae, #0b2456 100%);
+  cursor: pointer;
+}
+#send-survey-border:hover {
+  background: #2351ae;
+}
+#send-survey-border:hover #send-survey {
+  background: radial-gradient(
+    107.04% 92.42% at 50% 7.58%,
+    #0b2456 0%,
+    #2351ae 100%
+  );
+  color: #86a3d7;
+}
+#send-survey {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-family: panton800;
+  color: var(--text-color);
+  background: radial-gradient(
+    53.51% 92.42% at 50% 7.58%,
+    #2351ae 0%,
+    #0b2456 100%
+  );
+  pointer-events: none;
+}
