@@ -50,11 +50,11 @@ header {
 }
 .logo-text {
   position: absolute;
-  left: 9rem;
-  bottom: -66%;
-  font-size: 2.2rem;
-  color: var(--white);
-  text-shadow: 0 0 2rem var(--text-color);
+  left: 6.7rem;
+  bottom: -4.9rem;
+}
+.logo-text img{
+  width:17.8rem;
 }
 .header-bottom-side {
   width: 100%;
