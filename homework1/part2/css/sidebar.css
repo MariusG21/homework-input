@@ -1,0 +1,71 @@
+#sidebar {
+  position: fixed;
+  top: 7rem;
+  left: 0;
+  bottom: 0;
+  width: 24rem;
+  padding: 10rem 2rem;
+  font-size: 2rem;
+  background: rgba(174, 174, 174, 0.4);
+  backdrop-filter: blur(0.7rem);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-right: 0.3rem solid rgb(255, 255, 255, 0.4);
+  transform: translateX(-24rem);
+  transition: transform 300ms;
+}
+#sidebar p {
+  font-size: 2.5rem;
+  font-family: panton800;
+}
+.subtitles {
+  margin: 0 0 0.5rem 1rem;
+  position: relative;
+}
+.subtitles::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: -1rem;
+  top: 0.8rem;
+  pointer-events: none;
+}
+.subtitles:hover {
+  color: rgb(0, 110, 255);
+}
+hr {
+  width: 100%;
+  border: 0.1rem solid;
+  margin: 2.2rem 0;
+}
+#sidebar.js {
+  transform: translateX(0);
+}
+.toggle-sidebar {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  padding: 0.5rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  right: -4rem;
+  top: 3rem;
+  transition: transform 300ms;
+  transform-origin: 0 0;
+  cursor: pointer;
+}
+.toggle-sidebar:hover svg {
+  fill: rgb(201, 201, 201);
+  filter: drop-shadow(0 0 1rem #000000);
+}
+.toggle-sidebar.js {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,83 @@
+#header {
+  width: 100%;
+  height: 7rem;
+  background: rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.7rem);
+  border-bottom: 0.3rem solid rgba(255, 255, 255, 0.4);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  gap: 1rem;
+  z-index: 1;
+}
+.title {
+  font-family: panton800;
+  font-size: 3rem;
+  background: linear-gradient(rgb(0, 181, 0), rgb(255, 0, 0));
+  background-clip: text;
+  color: transparent;
+  line-height: 4rem;
+  text-shadow: 0.2rem 0.2rem 2rem #74ff7d;
+}
+/* .hamburger-menu {
+  width: 5rem;
+  height: 5rem;
+  background: rgb(140, 255, 165);
+  border-radius: 0.6rem;
+  display: flex;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+}
+
+.components {
+  width: 100%;
+  height: 0.4rem;
+  background: rgb(87, 87, 87);
+  border-radius: 1rem;
+}
+.components.first {
+  animation: hamburgerMenuFirst 0.5s linear forwards;
+}
+.hamburger-menu:hover .components.first {
+  animation: hamburgerMenuFirst 0.5s linear reverse;
+}
+
+.components.second {
+  animation: hamburgerMenuSecond 0.5s linear forwards;
+}
+.components.third {
+  animation: hamburgerMenuThird 0.5s linear forwards;
+}
+@keyframes hamburgerMenuFirst {
+  from {
+    transform: translateY(0) rotate(0) scale(1, 1);
+  }
+  to {
+    transform: translateY(1.4rem) rotate(135deg) scale(1.35, 1);
+  }
+}
+@keyframes hamburgerMenuThird {
+  from {
+    transform: translateY(0) rotate(0) scale(1, 1);
+  }
+  to {
+    transform: translateY(-1.4rem) rotate(-135deg) scale(1.35, 1);
+  }
+}
+@keyframes hamburgerMenuSecond {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg) scale(1);
+  }
+  to {
+    transform: rotate(720deg) scale(0);
+  }
+} */
